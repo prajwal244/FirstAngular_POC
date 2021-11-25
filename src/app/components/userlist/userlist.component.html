@@ -1,0 +1,32 @@
+
+<div class="container">
+    <h2>User List</h2>
+
+<table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">User Id</th>
+        <th scope="col">First Name</th>
+        <th scope="col">Last Name</th>
+        <th scope="col">Action</th>
+       
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor ="let users of users">
+       <td>{{users.id}}</td>
+       <td>{{users.firstname}}</td>
+       <td>{{users.lastname}}</td>
+      <td><button (click) ="viewuser(users.id)" class="btn btn-info">View</button>&nbsp;&nbsp;
+        <button  (click) ="edituser(users.id)" class="btn btn-warning">Update</button>&nbsp;&nbsp;
+        <button (click)="deleteuser(users.firstname)" class="btn btn-danger">Delete</button>
+      </td>
+      </tr>
+      
+    </tbody>
+  </table>
+  
+  
+  
+  
+</div>

@@ -1,0 +1,62 @@
+<div class="col-md-6 offset-md-3">
+    <h3>Update Details</h3>
+    <form (ngSubmit) ="onSubmit()">
+        <div class="form-group">
+            <label for="firstname">First Name:</label>
+            <input type="text" class="form-control" id="firstname" placeholder="Enter First Name" 
+            [(ngModel)]="users.firstname" name="firstname" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+          </div>
+          <div class="form-group">
+            <label for="lastname">Last Name:</label>
+            <input type="text" class="form-control" id="lastname" placeholder="Enter Last Name" 
+            [(ngModel)]="users.lastname" name="lastname" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+          </div>
+          <div class="form-group">
+            <label for="dob">Date of Birth:</label>
+            <input type="text" class="form-control" id="dob" placeholder="Enter Date of Birth(YYYY-MM-DD)" 
+            [(ngModel)]="users.dob" name="dob" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+          </div>
+          <div class="form-group">
+            <label for="joiningdate">Joining Date:</label>
+            <input type="text" class="form-control" id="joiningdate" placeholder="Enter Date of Joining(YYYY-MM-DD)" 
+            [(ngModel)]="users.joiningdate" name="joiningdate" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="text" class="form-control" id="email" placeholder="Enter Email Address" 
+            [(ngModel)]="users.email" name="email" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+          </div>
+          <div class="form-group">
+            <label for="phnumber">Phone Number:</label>
+            <input type="text" class="form-control" id="phnumber" placeholder="Enter Phone Number" 
+            [(ngModel)]="users.phnumber" name="phnumber" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+          </div>
+          <div class="form-group">
+            <label for="location">Location:</label>
+            <input type="text" class="form-control" id="location" placeholder="Enter Your Location" 
+            [(ngModel)]="users.location" name="location" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+          </div>
+          <div class="form-group">
+            <label for="pincode">Pincode:</label>
+            <input type="text" class="form-control" id="pincode" placeholder="Enter Pincode" 
+            [(ngModel)]="users.pincode" name="pincode" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+          </div><br>
+          <button type="submit" class="btn btn-success mb-2">Update</button>
+    </form>
+    </div>
